@@ -1,0 +1,23 @@
+<html>
+<head>
+	<style>
+	h1 {color:navy;}
+	body {background-color:green;}
+	p {color:yellow;}
+	</style>
+<title> World Wrestling Entertainment </title>
+</head>
+<body>
+<div>
+	<div class = img; position:right>
+		<img src="{{MEDIA_URL}}/static/2.jpg">
+	</div>
+	<h1>Players</h1>
+	{% for player in players %}
+	<div>
+    <h2><a href="/players/get/{{ player.id }}/">{{ player.name }}</a></h2>
+	</div>
+	{% endfor %}
+</div>
+</body>
+</html>

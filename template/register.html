@@ -1,0 +1,26 @@
+<html>
+<head>
+	<style>
+	h1 {color:navy;}
+	body {background-color:green;}
+	p {color:yellow;}
+	</style>
+<title> World Wrestling Entertainment </title>
+</head>
+<body>
+<div>
+	<div class = img; position:right>
+		<img src="{{MEDIA_URL}}/static/2.jpg">
+	</div>
+    <h1>Register</h1>
+    <form action="/accounts/register/" method="post">{% csrf_token %}
+
+    {{form}}
+
+    <input type="submit" value="Register" />
+
+    </form>
+</div>
+
+</body>
+</html>
